@@ -24,6 +24,7 @@
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
         <div class="logo">Keerthi Malathkar</div>
         <div class="hamburger-menu">
@@ -48,9 +49,9 @@
 
         </div>
         <div class="section__text">
-            <p class="section__text_p1">Hello, I'm</p>
+            <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">KEERTHI MALATHKAR, a Data Analyst</h1>
-            <p class="section__text_p2">Capital Planning Student Assistant at University of North Texas. Previously
+            <p class="section__text__p2">Capital Planning Student Assistant at University of North Texas. Previously
                 worked at Tata Consultancy Services</p><br>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./impfiles/KeerthiMalathkar_Resume.pdf')">Download
@@ -63,20 +64,20 @@
                 <img src="./impfiles/github.png" alt="My Github Profile" class="icon"
                     onclick="location.href='https://github.com/Kmalathkar1296/'" />
             </div>
+        </div>
     </section>
 
     <section id="aboutme">
         <h1 class="title">About Me</h1><br>
-        <div class="section-container"></div>
         <div class="section__text">
-            <p class="section__text_p1">
+            <p class="section__text__p1">
                 Originally from Hyderabad, India, In 2019 I started my career as a System Engineer at Tata Consultancy
                 Services, gaining four years of diverse tools experience.
                 Automated complete administration and configuration tasks on Apache HTTPD Web Server, JBoss and
                 WebLogicapplication servers using Jenkins and Ansible for 250+ applications.
                 As a shift lead took ownership for ensuring the smooth operations, scheduling and monitoring the team
                 performance.</p><br>
-            <p class="section__text_p1">Later, I am pursuing a master's in Advanced Data Analytics at the University of
+            <p class="section__text__p1">Later, I am pursuing a master's in Advanced Data Analytics at the University of
                 North Texas.
                 In my recent role as a Capital Planning Student Assistant, I adeptly utilized Power Apps and Power
                 Automate to create an application for data collection during site inspections, automated data flow to
@@ -88,41 +89,25 @@
 
     <section id="skills">
         <h1 class="title">Skills & Tools</h1>
-        <div class="section-container"></div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./impfiles/programming.png" class="icon">
-                    <h3>Programming</h3>
-                    <p class="section__text_p1">Python - Scikit-learn, NumPy, Pandas, Keras, R, MySQL, HTML, CSS,
-                        JavaScript, Data Structure</p>
-                    <div class="details-container">
-                        <img src="./impfiles/data_viz.png" class="icon" />
-                        <h3>Data Visualization</h3>
-                        <p class="section__text_p1">Tableau, Power BI, Excel, Looker Studio, Matplotlib, Seaborn</p>
-                        <div class="details-container">
-                            <img src="./impfiles/modelling.png" class="icon" />
-                            <h3>Modelling</h3>
-                            <p class="section__text_p1">Linear Regression, ANOVA, Logistic regression, Decision trees,
-                                Random Forest, Simple RNN</p>
-                            <div class="details-container">
-                                <img src="./impfiles/tools.png" class="icon" />
-                                <h3>Tools</h3>
-                                <p class="section__text_p1">Google Cloud Platform, Linux, Anaplan, Office365, Power
-                                    Automate, SAS, TensorFlow, Apache Spark, Hadoop, IBM BAW, Docker, Jenkins,
-                                    Kubernetes, Ansible, Git, Rapid Miner, Power Apps</p>
-                                <div class="details-container">
-                                    <img src="./impfiles/core.png" class="icon" />
-                                    <h3>Core Skills</h3>
-                                    <p class="section__text_p1">Active listening, Assertiveness, Empathy, Conflict
-                                        management, Restorative, Learner, Intellection, Connectedness, Shift Lead</p>
+        <div class="skills_container">
+            <div>
+            <img src="./impfiles/programming.png" class="icon">
+            <h3>Programming</h3></div>
+            <div><p class="skills__text__p1">Python - Scikit-learn, NumPy, Pandas, Keras, R, MySQL, HTML, CSS, JavaScript, Data Structure</p></div>
+            <img src="./impfiles/data_viz.png" class="icon" />
+            <h3>Data Visualization</h3>
+            <span>
+            <p class="skills__text__p1">Tableau, Power BI, Excel, Looker Studio, Matplotlib, Seaborn</p></span>
+            <img src="./impfiles/modelling.png" class="icon" />
+            <h3>Modelling</h3>
+            <p class="skills__text__p1">Linear Regression, ANOVA, Logistic regression, Decision trees, Random Forest, Simple RNN</p>
+            <img src="./impfiles/tools.png" class="icon" />
+            <h3>Tools</h3>
+            <p class="skills__text__p1">Google Cloud Platform, Linux, Anaplan, Office365, PowerAutomate, SAS, TensorFlow, Apache Spark, Hadoop, IBM BAW, Docker, Jenkins, Kubernetes, Ansible, Git, Rapid Miner, Power Apps</p>
+            <img src="./impfiles/core.png" class="icon" />
+            <h3>Core Skills</h3>
+            <p class="skills__text__p1">Active listening, Assertiveness, Empathy, Conflict management, Restorative, Learner, Intellection, Connectedness, Shift Lead</p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -178,7 +163,7 @@
 
     <section id="projects">
         <h1 class="title">Projects</h1>
-        <div class="section-container">
+        <div class="section-container"></div>
         <div class="details-container color-container">
             <div class="article-container">
                 <img src="./impfiles/Layoff_Erase.jpg" alt="Project 1" class="project-img" />

@@ -111,7 +111,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links {
+.menu-links li {
   list-style: none;
 }
 
@@ -146,15 +146,6 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
 .section-container {
   display: flex;
 }
@@ -183,7 +174,6 @@ section {
 }
 
 .section__text__p1 {
-  font-size: 2.75rem;
   text-align: center;
 }
 
@@ -207,12 +197,6 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
 }
 
 .btn-container {
@@ -261,6 +245,18 @@ section {
   gap: 1rem;
 }
 
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+  
 .section__text {
   align-self: center;
   text-align: center;
@@ -270,12 +266,9 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1,
-.section__text__p2,
-.section__text__p3,
-.section__text__p4 {
+.section__text__p1 {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   margin-bottom: 1rem;
 }
 
@@ -283,6 +276,27 @@ section {
   font-size: 3rem;
   text-align: center;
 }
+
+#skills {
+    position: relative;
+  }
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .skills_container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+
+  }
+  .skills__text__p1 {
+    font-weight: 600;
+  }
 
 #experience {
   position: relative;
