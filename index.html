@@ -1,268 +1,194 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keerthi Malathkar | Data Analyst</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #00ff88;
-            --secondary: #0f172a;
-            --dark: #020617;
-            --light: #f8fafc;
-        }
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 
-        body {
-            background: var(--secondary);
-            color: var(--light);
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        .gradient-text {
-            background: linear-gradient(45deg, #00ff88, #00ffee);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .nav-glass {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-img {
-            border: 3px solid var(--primary);
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-        }
-
-        .skill-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
-        }
-
-        .project-card {
-            border: none;
-            background: rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
-        }
-
-        .btn-neon {
-            background: var(--primary);
-            color: var(--dark);
-            border: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-neon:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-        }
-
-        .section-title {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50%;
-            height: 3px;
-            background: var(--primary);
-        }
-
-        .social-icon {
-            transition: all 0.3s ease;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.2);
-            filter: drop-shadow(0 0 5px var(--primary));
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
-        <div class="container">
-            <a class="navbar-brand gradient-text fs-3 fw-bold" href="#">Keerthi Malathkar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+    <nav id="desktop-nav">
+        <div class="logo">Keerthi Malathkar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skills">Skills & Tools</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Keerthi Malathkar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#aboutme" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills & Tools</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="min-vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-1 fw-bold gradient-text mb-4">Data Analyst &<br>AI Enthusiast</h1>
-                    <p class="lead mb-4">Transforming raw data into actionable insights through advanced analytics and machine learning</p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#contact" class="btn btn-neon px-4 py-2">Hire Me</a>
-                        <a href="./impfiles/KeerthiMalathkar_Resume.pdf" class="btn btn-outline-light px-4 py-2">Download CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <img src="./impfiles/profile-pic.png" class="profile-img rounded-circle w-75" alt="Profile">
-                </div>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./impfiles/profile-pic.png" alt="Keerthi Malathkar Profile Picture" />
+
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title">KEERTHI MALATHKAR, a Data Analyst</h1>
+            <p class="section__text_p2">Market Research Analyst at University of North Texas. Previously
+                worked at Tata Consultancy Services</p><br>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./impfiles/KeerthiMalathkar_Resume.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
+            <div class="'socials-container">
+                <img src="./impfiles/linkedin.png" alt="My Linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/keerthi-malathkar-51aa7114b/'" />
+                <img src="./impfiles/github.png" alt="My Github Profile" class="icon"
+                    onclick="location.href='https://github.com/Kmalathkar1296/'" />
+            </div>
+    </section>
+
+    <section id="aboutme">
+        <h1 class="title">About Me</h1><br>
+        <div class="section-container"></div>
+        <div class="section__text">
+            <p class="section__text_p1">
+                Driven Data Scientist with 4+ years of experience in cloud technologies, big data, and data analytics. I help companies leverage data-driven insights to optimize decision-making and achieve business growth. My expertise spans across Python, MySQL, Tableau, GCP, AWS, and machine learning techniques to deliver measurable results.
+
+                </p><br>
+            <p class="section__text_p1">Here are a few examples of my work:
+                <l> Developed a fraud detection model that achieved a 94.5% accuracy rate using LightGBM and improved fraud detection by 30%. </l> 
+                <l> Built and optimized ETL pipelines, reducing data processing time by 40%, and enabled faster access to critical insights for decision-making.</l> 
+                <l> Designed and implemented dashboards using Tableau and Power BI, increasing executive-level reporting efficiency by 25%.</l> 
+                <l> Engineered a Power Apps solution that reduced manual effort in data collection by 30%, improving operational efficiency.</l> 
+            </p>
+            <p> I am passionate about machine learning, cloud computing, and predictive analytics, and I thrive in environments where I can drive business impact through data. I am excited about roles where I can innovate with data to unlock hidden value and drive impact. Feel free to connect with me at keerthimalathkar30@gmail.com or here on LinkedIn!</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="aboutme" class="py-5">
-        <div class="container">
-            <h2 class="section-title gradient-text mb-5">About Me</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <p class="lead">Driven Data Scientist with 4+ years of experience in cloud technologies, big data, and data analytics. I help companies leverage data-driven insights to optimize decision-making and achieve business growth.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="skill-card p-4 rounded">
-                                <h3 class="h5 gradient-text">94.5%</h3>
-                                <p>Fraud Detection Accuracy</p>
+    <section id="skills">
+        <h1 class="title">Skills & Tools</h1>
+        <div class="section-container"></div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./impfiles/programming.png" class="icon">
+                    <h3>Languages/Tools:</h3>
+                    <p class="section__text_p1">Python, R, MySQL, HTML, SAS, Git, Airflow, Snowflake, Databricks, Linux, MLflow, VBA/Macros, Agile, ETL, GCP</p>
+                    <div class="details-container">
+                        <img src="./impfiles/data_viz.png" class="icon" />
+                        <h3>Data Visualization</h3>
+                        <p class="section__text_p1">Tableau, Power BI, Excel, Looker Studio, Matplotlib, Seaborn</p>
+                        <div class="details-container">
+                            <img src="./impfiles/modelling.png" class="icon" />
+                            <h3>Machine Learning & AI</h3>
+                            <p class="section__text_p1">Classification, Regression, Clustering, Time-Series Analysis, Hypothesis Testing, RNN, CNN, Predictive Modeling,
+                                Recommendation Systems, NLP, LLM, ChatGPT, LangChain, AI Agent, HuggingFace</p>
+                            <div class="details-container">
+                                <img src="./impfiles/tools.png" class="icon" />
+                                <h3>Tools</h3>
+                                <p class="section__text_p1">Google Cloud Platform, Linux, Anaplan, Office365, Power
+                                    Automate, SAS, TensorFlow, Apache Spark, Hadoop, IBM BAW, Docker, Jenkins,
+                                    Kubernetes, Ansible, Git, Rapid Miner, Power Apps</p>
+                                <div class="details-container">
+                                    <img src="./impfiles/core.png" class="icon" />
+                                    <h3>Core Skills</h3>
+                                    <p class="section__text_p1">Active listening, Assertiveness, Empathy, Conflict
+                                        management, Restorative, Learner, Intellection, Connectedness, Shift Lead</p>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="skill-card p-4 rounded">
-                                <h3 class="h5 gradient-text">40%</h3>
-                                <p>ETL Processing Improvement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1 class="title"><span>Work Experience</span></h1><br><br>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>Market Research Analyst</h3>
+                                <p>March 2024 - December 2024</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>University of North Texas</h3>
+                                <p>Denton, Texas</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Part- Time</h3>
+                            </div>
+                        </article>
+                    </div><br><br>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>Capital Planning Analyst</h3>
+                                <p>June 2023 - February 2024</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>University of North Texas</h3>
+                                <p>Denton, Texas</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Part- Time</h3>
+                            </div>
+                        </article>
+                    </div><br><br>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>Data Scientist</h3>
+                                <p>January 2019 - February 2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Tata Consultancy Services</h3>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Full- Time</h3>
+                            </div>
+                        </article>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-dark">
-        <div class="container">
-            <h2 class="section-title gradient-text mb-5">Technical Arsenal</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="skill-card p-4 rounded">
-                        <h3 class="gradient-text"><i class="fas fa-code me-2"></i>Languages</h3>
-                        <ul class="list-unstyled">
-                            <li>Python</li>
-                            <li>R</li>
-                            <li>SQL</li>
-                            <li>HTML/CSS</li>
-                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card p-4 rounded">
-                        <h3 class="gradient-text"><i class="fas fa-chart-line me-2"></i>Analytics</h3>
-                        <ul class="list-unstyled">
-                            <li>Machine Learning</li>
-                            <li>Predictive Modeling</li>
-                            <li>NLP</li>
-                            <li>Deep Learning</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card p-4 rounded">
-                        <h3 class="gradient-text"><i class="fas fa-tools me-2"></i>Tools</h3>
-                        <ul class="list-unstyled">
-                            <li>Tableau</li>
-                            <li>Power BI</li>
-                            <li>TensorFlow</li>
-                            <li>Apache Spark</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="experience" class="section">
-        <h2>Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="start-date">March 2024</span> - <span class="end-date">December 2024</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Market Research Analyst</h3>
-                    <h4>University of North Texas</h4>
-                    <p>Denton, Texas</p>
-                    <p>Part-Time</p>
-                    <ul class="timeline-achievements"> 
-                        <li>Achievement 1</li> 
-                        <li>Achievement 2</li> 
-                    </ul>
                 </div>
             </div>
-    
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="start-date">June 2023</span> - <span class="end-date">February 2024</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Capital Planning Analyst</h3>
-                    <h4>University of North Texas</h4>
-                    <p>Denton, Texas</p>
-                    <p>Part-Time</p>
-                    <ul class="timeline-achievements"> 
-                        <li>Achievement 1</li> 
-                        <li>Achievement 2</li> 
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="start-date">January 2019</span> - <span class="end-date">February 2023</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Data Scientist</h3>
-                    <h4>Tata Consultancy Services</h4>
-                    <p>Hyderabad, India</p>
-                    <p>Full-Time</p>
-                    <ul class="timeline-achievements"> 
-                        <li>Developed a fraud detection model that achieved a 94.5% accuracy rate using LightGBM and improved fraud detection by 30%.</li>
-                        <li>Built and optimized ETL pipelines, reducing data processing time by 40% and enabling faster access to critical insights.</li>
-                        <li>Designed and implemented dashboards using Tableau and Power BI, increasing executive-level reporting efficiency by 25%.</li> 
-                    </ul>
-                </div>
-            </div>
-        </div>
+
     </section>
 
    <!-- Include Bootstrap CSS (for example, via CDN) -->
