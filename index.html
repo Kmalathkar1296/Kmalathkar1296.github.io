@@ -74,12 +74,12 @@
 
                 </p><br>
             <p class="section__text_p1">Here are a few examples of my work:
-                * Developed a fraud detection model that achieved a 94.5% accuracy rate using LightGBM and improved fraud detection by 30%.
-                * Built and optimized ETL pipelines, reducing data processing time by 40%, and enabled faster access to critical insights for decision-making.
-                * Designed and implemented dashboards using Tableau and Power BI, increasing executive-level reporting efficiency by 25%.
-                * Engineered a Power Apps solution that reduced manual effort in data collection by 30%, improving operational efficiency.
-
-                I am passionate about machine learning, cloud computing, and predictive analytics, and I thrive in environments where I can drive business impact through data. I am excited about roles where I can innovate with data to unlock hidden value and drive impact. Feel free to connect with me at keerthimalathkar30@gmail.com or here on LinkedIn!</p>
+                <l> Developed a fraud detection model that achieved a 94.5% accuracy rate using LightGBM and improved fraud detection by 30%. </l> 
+                <l> Built and optimized ETL pipelines, reducing data processing time by 40%, and enabled faster access to critical insights for decision-making.</l> 
+                <l> Designed and implemented dashboards using Tableau and Power BI, increasing executive-level reporting efficiency by 25%.</l> 
+                <l> Engineered a Power Apps solution that reduced manual effort in data collection by 30%, improving operational efficiency.</l> 
+            </p>
+            <p> I am passionate about machine learning, cloud computing, and predictive analytics, and I thrive in environments where I can drive business impact through data. I am excited about roles where I can innovate with data to unlock hidden value and drive impact. Feel free to connect with me at keerthimalathkar30@gmail.com or here on LinkedIn!</p>
         </div>
     </section>
 
@@ -191,52 +191,129 @@
 
     </section>
 
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="section-container">
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./impfiles/Layoff_Erase.jpg" alt="Project 1" class="project-img" />
-            </div>
-            <div>
-                <h3 class="experience-sub-title project-title">Research Copilot-</h3>
-                <p> Developed an ChatGPT based Generative AI driven Research assistant applications which helps professors and students to
-                    understand research papers in 5 minutes. Helps to have QnA conversation with the Research Paper provided.</p>
-            </div>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kmalathkar1296/Research-Copilot'">
-                    Github
-                </button>
-            </div>
-        </div><br><br>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./impfiles/seoul.png" alt="Project 2" class="project-img" />
-            </div>
-            <h3 class="experience-sub-title project-title">Seoul Bike Riding Demand Forecast</h3>
-            <p>Using public dataset access provided by UCI Machine learning Repository public dataset, predicted the
-                bike demand using the Linear regression and Decision Tree.</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kmalathkar1296/Seoul-Bike-Riding-Demand-Prediction/'">
-                    Github
-                </button>
-            </div>
-        </div><br><br>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./impfiles/OperatingBudget.png" alt="Operating Budget of Dallas" class="project-img" />
-            </div>
-            <h3 class="experience-sub-title project-title">Operating Budget of Dallas</h3>
-            <p>Understanding the Operating budget of the city Dallas using the powerful visualization tool Tableau and
-                transformed the data using Tableau Prep Builder.</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kmalathkar1296/Operating-Budget-of-Dallas/'">
-                    Github
-                </button>
-            </div>
+   <!-- Include Bootstrap CSS (for example, via CDN) -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet"
+/>
+
+<section id="projects">
+<h1 class="title">Projects</h1>
+<div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <!-- Project 1: Research Copilot -->
+    <div class="carousel-item active">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="https://vajiram-prod.s3.ap-south-1.amazonaws.com/What_is_Generative_AI_63beafff52.webp"
+            alt="Project 1"
+            class="project-img"
+          />
         </div>
+        <div>
+          <h3 class="experience-sub-title project-title">Research Copilot</h3>
+          <p>
+            Developed a ChatGPT-based Generative AI research assistant application which helps
+            professors and students understand research papers in 5 minutes, with QnA conversation
+            support.
+          </p>
         </div>
-    </section>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Kmalathkar1296/Research-Copilot'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 2: Seoul Bike Riding Demand Forecast -->
+    <div class="carousel-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./impfiles/seoul.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <div>
+          <h3 class="experience-sub-title project-title">Seoul Bike Riding Demand Forecast</h3>
+          <p>
+            Using the public dataset provided by the UCI Machine Learning Repository, predicted the bike
+            demand using Linear Regression and Decision Tree algorithms.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Kmalathkar1296/Seoul-Bike-Riding-Demand-Prediction/'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 3: Operating Budget of Dallas -->
+    <div class="carousel-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./impfiles/OperatingBudget.png"
+            alt="Operating Budget of Dallas"
+            class="project-img"
+          />
+        </div>
+        <div>
+          <h3 class="experience-sub-title project-title">Operating Budget of Dallas</h3>
+          <p>
+            Analyzed the operating budget of the city of Dallas using Tableau for visualization and
+            transformed data with Tableau Prep Builder.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Kmalathkar1296/Operating-Budget-of-Dallas/'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#projectsCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#projectsCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<!-- Include Bootstrap JS (for example, via CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
